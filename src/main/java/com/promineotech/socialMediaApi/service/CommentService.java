@@ -30,7 +30,7 @@ public class CommentService {
 		if ( user == null || post == null ) {
 			throw new Exception("User or Post does not exist.");
 		}
-		comment.setDate((java.sql.Date) new Date());
+		comment.setDate(new Date());
 		comment.setUser(user);
 		comment.setPost(post);
 		
